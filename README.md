@@ -37,3 +37,40 @@ pip install -r requirements.txt
 # Migrate DB and run
 python manage.py migrate
 python manage.py runserver
+
+
+
+📑 API Documentation (Swagger)
+Interactive Swagger UI is auto-generated and available after running the server:
+
+🌐 Open in browser: http://localhost:8000/swagger/
+
+✅ Available Endpoints
+
+Module	Description
+/contacts/	CRUD for landlords & tenants
+/units/	Manage property units and assign landlords
+/leases/	Create/view lease info
+/dashboard/	Total units, rent summary, landlord units
+/index/	Display all linked test data
+Each endpoint includes:
+
+Input and output schemas
+
+Dropdown fields (e.g., Contact Type)
+
+Example requests/responses
+
+Powered by drf-yasg Swagger integration.
+
+🧪 Test Data
+Pre-loaded:
+
+Landlord: John Doe
+
+Tenant: Jane Smith
+
+Unit: A1 (Apartment, Occupied)
+
+Lease: Monthly rent linked to above
+
